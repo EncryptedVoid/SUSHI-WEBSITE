@@ -1,197 +1,224 @@
+/* Main container for the Popular Foods section */
 .popular-foods {
-  padding: 64px;
+  padding: 64px; /* Padding around the entire container */
 
-  display: flex;
-  flex-direction: column;
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack child elements vertically */
 
-  background-color: var(--primary-color);
-  background-image: url("../../assets/popular_bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-color: var(
+    --primary-color
+  ); /* Background color from a CSS variable */
+  background-image: url("../../assets/popular_bg.png"); /* Background image for the section */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-size: contain; /* Ensure the background image fits within the container */
 
-  overflow: hidden;
+  overflow: hidden; /* Hide any overflowing content */
 }
 
+/* Styling for the title in the Popular Foods section */
 .popular-foods__title {
-  font-size: 56px;
-  font-family: var(--playfair-display);
-  font-weight: 600;
-  line-height: 78px;
-  color: #fff;
-  text-align: center;
+  font-size: 56px; /* Large font size for the title */
+  font-family: var(
+    --playfair-display
+  ); /* Custom font family from a CSS variable */
+  font-weight: 600; /* Font weight for emphasis */
+  line-height: 78px; /* Line height for better readability */
+  color: #fff; /* White color for the text */
+  text-align: center; /* Center-align the title */
 }
 
+/* Container for filter buttons */
 .popular-foods__filters {
-  margin-top: 48px;
-  max-width: 100%;
-  overflow-x: auto;
+  margin-top: 48px; /* Top margin for spacing from the title */
+  max-width: 100%; /* Maximum width of the container */
+  overflow-x: auto; /* Enable horizontal scrolling for overflow content */
 
-  display: flex;
-  justify-content: center;
-  gap: 24px;
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center-align the filter buttons */
+  gap: 24px; /* Space between each filter button */
 }
 
+/* Styling for individual filter buttons */
 .popular-foods__filter-btn {
-  padding: 10px 28px;
+  padding: 10px 28px; /* Padding inside the buttons */
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Align items in a row */
+  align-items: center; /* Vertically align items in the center */
+  gap: 10px; /* Space between text and icon in the button */
 
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 46px;
+  background: rgba(255, 255, 255, 0.05); /* Semi-transparent white background */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Slightly visible white border */
+  border-radius: 46px; /* Rounded corners for the buttons */
 
-  font-size: 16px;
-  font-weight: 300px;
-  line-height: 25px;
-  font-family: var(--plus-jakarta-sans);
-  color: #fff;
-  cursor: pointer;
+  font-size: 16px; /* Font size */
+  font-weight: 300px; /* Light font weight */
+  line-height: 25px; /* Line height */
+  font-family: var(
+    --plus-jakarta-sans
+  ); /* Custom font family from a CSS variable */
+  color: #fff; /* White color for the text */
+  cursor: pointer; /* Change cursor to indicate button is clickable */
 }
 
+/* Styling for images inside filter buttons */
 .popular-foods__filter-btn img {
-  width: 36px;
-  height: 36px;
-  object-fit: contain;
+  width: 36px; /* Width of the image */
+  height: 36px; /* Height of the image */
+  object-fit: contain; /* Ensure the image fits within the button */
 }
 
-.popular-foods__filter-btn.active {
-  background: #fff;
-  color: var(--primary-color);
-}
-
+/* Styling for active and hover states of filter buttons */
+.popular-foods__filter-btn.active,
 .popular-foods__filter-btn:hover {
-  background: #fff;
-  color: var(--primary-color);
+  background: #fff; /* White background for active/hover state */
+  color: var(--primary-color); /* Primary color text for contrast */
 }
 
+/* Container for the food catalogue */
 .popular-foods__catalogue {
-  margin-top: 64px;
+  margin-top: 64px; /* Top margin for spacing from the filters */
 
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  gap: 56px;
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center-align the catalogue items */
+  align-items: flex-end; /* Align items to the end (bottom) */
+  flex-wrap: wrap; /* Allow items to wrap onto new lines */
+  gap: 56px; /* Space between each catalogue item */
 }
 
+/* Styling for the action button in the Popular Foods section */
 .popular-foods__button {
-  width: fit-content;
+  width: fit-content; /* Width to fit its content */
 
-  padding: 20px 30px;
-  margin: 80px auto 0;
+  padding: 20px 30px; /* Padding inside the button */
+  margin: 80px auto 0; /* Margin for top spacing and auto centering horizontally */
 
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 23px;
-  font-family: var(--plus-jakarta-sans);
-  color: #fff;
+  font-weight: 500; /* Medium font weight */
+  font-size: 18px; /* Font size */
+  line-height: 23px; /* Line height */
+  font-family: var(
+    --plus-jakarta-sans
+  ); /* Custom font family from a CSS variable */
+  color: #fff; /* White color for the text */
 
-  border: none;
-  outline: none;
-  background: var(--secondary-color);
-  border-radius: 64px;
-  cursor: pointer;
+  border: none; /* No border for the button */
+  outline: none; /* No outline for the button */
+  background: var(--secondary-color); /* Secondary color for the background */
+  border-radius: 64px; /* Rounded corners for the button */
+  cursor: pointer; /* Change cursor to indicate button is clickable */
 }
 
+/* Styling for images inside the action button */
 .popular-foods__button img {
-  width: 14px;
-  height: 14px;
-  object-fit: contain;
+  width: 14px; /* Width of the image */
+  height: 14px; /* Height of the image */
+  object-fit: contain; /* Ensure the image fits within the button */
 
-  margin-left: 21px;
+  margin-left: 21px; /* Left margin for spacing from the text */
 }
 
+/* Styling for individual food cards */
 .popular-foods__card {
-  padding: 38px;
-  min-width: 260px;
-  height: fit-content;
+  padding: 38px; /* Padding inside the card */
+  min-width: 260px; /* Minimum width of the card */
+  height: fit-content; /* Height to fit its content */
 
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically align items in the center */
+  flex-direction: column; /* Stack items vertically */
 
-  border-radius: 36px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 36px; /* Rounded corners for the card */
+  background: rgba(255, 255, 255, 0.05); /* Semi-transparent white background */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Slightly visible white border */
 }
 
+/* Styling for images in the food cards */
 .popular-foods__card-image {
-  width: 110px;
-  height: 84px;
-  object-fit: contain;
+  width: 110px; /* Width of the image */
+  height: 84px; /* Height of the image */
+  object-fit: contain; /* Ensure the image fits within the card */
 }
 
+/* Styling for titles in the food cards */
 .popular-foods__card-title {
-  margin-top: 47px;
+  margin-top: 47px; /* Top margin for spacing from the image */
 
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  font-family: var(--playfair-display);
-  color: #fff;
-  text-align: center;
+  font-weight: 600; /* Bold font weight */
+  font-size: 24px; /* Font size */
+  line-height: 32px; /* Line height */
+  font-family: var(
+    --playfair-display
+  ); /* Custom font family from a CSS variable */
+  color: #fff; /* White color for the text */
+  text-align: center; /* Center-align the title */
 }
 
+/* Styling for the details section in the food cards */
 .popular-foods__card-details {
-  width: 100%;
-  margin-top: 32px;
+  width: 100%; /* Full width of the parent element */
+  margin-top: 32px; /* Top margin for spacing from the title */
 }
 
+/* Styling for the rating in the food cards */
 .popular-foods__card-rating {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically align items in the center */
+  gap: 8px; /* Space between the rating icon and text */
 }
 
+/* Styling for rating images in the food cards */
 .popular-foods__card-rating img {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
+  width: 24px; /* Width of the rating icon */
+  height: 24px; /* Height of the rating icon */
+  object-fit: contain; /* Ensure the image fits within the card */
 }
 
+/* Styling for rating text in the food cards */
 .popular-foods__card-rating p {
-  font-size: 20px;
-  font-weight: 300;
-  font-family: var(--plus-jakarta-sans);
-  color: #fff;
+  font-size: 20px; /* Font size */
+  font-weight: 300; /* Light font weight */
+  font-family: var(
+    --plus-jakarta-sans
+  ); /* Custom font family from a CSS variable */
+  color: #fff; /* White color for the text */
 }
 
+/* Styling for the price in the food cards */
 .popular-foods__card-price {
-  font-size: 20px;
-  font-weight: 500;
-  font-family: var(--plus-jakarta-sans);
-  color: #fff;
+  font-size: 20px; /* Font size */
+  font-weight: 500; /* Medium font weight */
+  font-family: var(
+    --plus-jakarta-sans
+  ); /* Custom font family from a CSS variable */
+  color: #fff; /* White color for the text */
 }
 
+/* Styling for the active state of the food cards */
 .popular-foods__card.active-card {
-  background: #fff;
-  min-width: 340px;
+  background: #fff; /* White background for the active card */
+  min-width: 340px; /* Minimum width for the active card */
 }
 
+/* Adjustments for the active food card's image */
 .popular-foods__card.active-card .popular-foods__card-image {
-  width: 214px;
-  height: 160px;
+  width: 214px; /* Increased width for the image */
+  height: 160px; /* Increased height for the image */
 }
 
+/* Adjustments for the active food card's title */
 .popular-foods__card.active-card .popular-foods__card-title {
-  color: var(--black-500);
-  font-size: 32px;
+  color: var(--black-500); /* Darker color for the text */
+  font-size: 32px; /* Larger font size for the title */
 }
 
+/* Adjustments for the active food card's rating images */
 .popular-foods__card.active-card .popular-foods__card-rating img {
-  width: 32px;
-  height: 32px;
+  width: 32px; /* Increased width for the rating icon */
+  height: 32px; /* Increased height for the rating icon */
 }
 
-.popular-foods__card.active-card .popular-foods__card-rating p {
-  font-size: 24px;
-  color: var(--gray-100);
-}
-
+/* Adjustments for the active food card's rating text */
 .popular-foods__card.active-card .popular-foods__card-price {
   font-size: 24px;
   color: var(--secondary-color);

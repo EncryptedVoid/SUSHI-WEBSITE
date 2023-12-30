@@ -1,175 +1,225 @@
+/* Hero Section Styling */
 .hero {
-  display: flex;
-  min-height: calc(100vh - 74px);
-  overflow: hidden;
+  display: flex; /* Use flexbox for layout */
+  min-height: calc(
+    100vh - 74px
+  ); /* Minimum height set to viewport height minus 74px */
+  overflow: hidden; /* Hide any content that overflows the hero section's box */
 }
 
+/* Hero Image Container Styling */
 .hero-image {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+  flex: 1; /* Flex grow factor, allows the image container to grow and take available space */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack child elements vertically */
 
-  position: relative;
-  z-index: 5;
+  position: relative; /* Set position context for absolute positioning of children */
+  z-index: 5; /* Set stack order higher than default */
 }
 
+/* Hero Image Styling */
 .hero-image img {
-  width: 120%;
-  height: 100%;
-  object-fit: contain;
+  width: 120%; /* Set width greater than 100% for a zoom effect */
+  height: 100%; /* Full height of the parent element */
+  object-fit: contain; /* Ensure the image fits within its container without being distorted */
 }
 
+/* Overlay Styling for the Hero Image */
 .hero-image__overlay {
-  position: absolute;
-  inset: 0;
-  width: 100%;
+  position: absolute; /* Position the overlay absolutely relative to its nearest positioned ancestor */
+  inset: 0; /* Shorthand for setting top, right, bottom, and left to 0 */
+  width: 100%; /* Full width of the parent element */
 
-  background-color: var(--primary-color);
-  z-index: -1;
+  background-color: var(
+    --primary-color
+  ); /* Background color using a CSS variable for primary color */
+  z-index: -1; /* Place the overlay behind the image */
 }
 
+/* Styling for H2 element in Hero Image */
 .hero-image h2 {
-  position: absolute;
-  bottom: 0;
-  padding: 20px;
+  position: absolute; /* Position the text absolutely within the hero image */
+  bottom: 0; /* Align to the bottom of the parent container */
+  padding: 20px; /* Padding around the text */
 
-  font-family: var(--playfair-display);
-  font-weight: 700;
-  font-size: 120px;
-  line-height: 138px;
-  color: #fff;
+  font-family: var(
+    --playfair-display
+  ); /* Set font family using a CSS variable */
+  font-weight: 700; /* Bold font weight */
+  font-size: 120px; /* Large font size for impact */
+  line-height: 138px; /* Line height for the text */
+  color: #fff; /* White text color */
 }
 
+/* Hero Content Container Styling */
 .hero-content {
-  flex: 1.22;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  flex: 1.22; /* Flex grow factor with a specific value for layout balance */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out children evenly */
+  flex-direction: column; /* Stack child elements vertically */
 }
 
+/* Hero Content Info Styling */
 .hero-content-info {
-  padding: 64px;
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  padding: 64px; /* Padding around the content */
+  flex: 1; /* Flex grow factor, allows the content to grow and take available space */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Vertically center child elements in the container */
+  flex-direction: column; /* Stack child elements vertically */
 }
 
+/* Hero Content H1 Styling */
 .hero-content-info h1 {
-  font-size: 80px;
-  font-weight: 600px;
-  font-family: var(--playfair-display);
-  color: var(--secondary-color);
+  font-size: 80px; /* Large font size for impact */
+  font-weight: 600px; /* Medium-bold font weight */
+  font-family: var(
+    --playfair-display
+  ); /* Set font family using a CSS variable */
+  color: var(
+    --secondary-color
+  ); /* Text color using a CSS variable for secondary color */
 }
 
+/* Paragraph Styling within Hero Content */
 .hero-content-info p {
-  margin: 32px 0 0 32px;
+  margin: 32px 0 0 32px; /* Margins for spacing */
 
-  font-family: var(--plus-jakarta-sans);
-  color: var(--secondary-color);
-  font-size: 18px;
-  font-weight: 400;
+  font-family: var(
+    --plus-jakarta-sans
+  ); /* Set font family using a CSS variable */
+  color: var(
+    --secondary-color
+  ); /* Text color using a CSS variable for secondary color */
+  font-size: 18px; /* Font size */
+  font-weight: 400; /* Normal font weight */
 }
 
+/* Hero Content Buttons Container Styling */
 .hero-content__buttons {
-  margin: 41px 0 0 41px;
+  margin: 41px 0 0 41px; /* Margins for spacing */
 
-  display: flex;
-  flex-wrap: wrap;
-  gap: 36px;
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow buttons to wrap onto multiple lines */
+  gap: 36px; /* Space between buttons */
 }
 
+/* Order Button Styling in Hero Content */
 .hero-content__order-button {
-  padding: 20px;
-  border-radius: 36px;
-  min-width: 212px;
-  outline: none;
-  border: none;
-  background: var(--secondary-color);
+  padding: 20px; /* Padding around the button text */
+  border-radius: 36px; /* Rounded corners for the button */
+  min-width: 212px; /* Minimum width of the button */
+  outline: none; /* No outline */
+  border: none; /* No border */
+  background: var(
+    --secondary-color
+  ); /* Background color using a CSS variable for secondary color */
 
-  cursor: pointer;
+  cursor: pointer; /* Change cursor to indicate the button is clickable */
 
-  color: #fff;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 23px;
+  color: #fff; /* White text color */
+  font-weight: 500; /* Medium font weight */
+  font-size: 18px; /* Font size */
+  line-height: 23px; /* Line height */
 }
 
+/* Play Button Styling in Hero Content */
 .hero-content__play-button {
-  border: none;
-  outline: none;
-  background: transparent;
+  border: none; /* No border */
+  outline: none; /* No outline */
+  background: transparent; /* Transparent background */
 
-  display: flex;
-  align-items: center;
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically align items in the center */
 
-  font-size: 16px;
-  line-height: 19px;
-  color: var(--black-200);
-  font-family: var(--plus-jakarta-sans);
+  font-size: 16px; /* Font size */
+  line-height: 19px; /* Line height */
+  color: var(--black-200); /* Text color using a CSS variable */
+  font-family: var(
+    --plus-jakarta-sans
+  ); /* Set font family using a CSS variable */
 
-  cursor: pointer;
+  cursor: pointer; /* Change cursor to indicate the button is clickable */
 }
 
+/* Image Styling within Play Button */
 .hero-content__play-button img {
-  margin-right: 12px;
+  margin-right: 12px; /* Right margin for spacing */
 
-  width: 46px;
-  height: 46px;
-  object-fit: contain;
+  width: 46px; /* Set width */
+  height: 46px; /* Set height */
+  object-fit: contain; /* Ensure the image fits within its container without being distorted */
 }
 
+/* Testimonial Container Styling in Hero Content */
 .hero-content__testimonial {
-  padding: 32px 64px;
+  padding: 32px 64px; /* Padding around the testimonial content */
 
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+  gap: 20px; /* Space between items */
 
-  background: var(--color-white);
+  background: var(
+    --color-white
+  ); /* Background color, using a CSS variable for white */
 }
 
+/* Customer Styling in Testimonial */
 .hero-content__customer {
-  flex: 1;
-  gap: 10px;
+  flex: 1; /* Flex grow factor, allows the customer section to grow and take available space */
+  gap: 10px; /* Space between items */
 }
 
+/* Customer Name Styling */
 .hero-content__customer h4 {
-  font-size: 62px;
-  font-weight: 400;
-  font-family: var(--playfair-display);
+  font-size: 62px; /* Large font size for impact */
+  font-weight: 400; /* Normal font weight */
+  font-family: var(
+    --playfair-display
+  ); /* Set font family using a CSS variable */
 }
 
+/* Customer Review Paragraph Styling */
 .hero-content__customer p {
-  font-size: 16px;
-  font-weight: 400;
-  font-family: var(--plus-jakarta-sans);
-  color: var(--secondary-color);
-  opacity: 0.5;
+  font-size: 16px; /* Font size */
+  font-weight: 400; /* Normal font weight */
+  font-family: var(
+    --plus-jakarta-sans
+  ); /* Set font family using a CSS variable */
+  color: var(
+    --secondary-color
+  ); /* Text color using a CSS variable for secondary color */
+  opacity: 0.5; /* Slightly transparent text */
 }
 
+/* Review Container Styling */
 .hero-content__review {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  flex: 1; /* Flex grow factor, allows the review section to grow and take available space */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically align items in the center */
+  gap: 10px; /* Space between items */
 
-  padding-left: 20px;
-  border-left: 1px solid rgba(2, 2, 2, 0.1);
-  min-width: 200px;
+  padding-left: 20px; /* Left padding */
+  border-left: 1px solid rgba(2, 2, 2, 0.1); /* Left border for separation */
+  min-width: 200px; /* Minimum width of the review container */
 }
 
+/* Review Image Styling */
 .hero-content__review img {
-  width: 42px;
-  height: 42px;
-  object-fit: contain;
+  width: 42px; /* Set width */
+  height: 42px; /* Set height */
+  object-fit: contain; /* Ensure the image fits within its container without being distorted */
 }
 
+/* Review Text Styling */
 .hero-content__review p {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 32px;
-  font-family: var(--plus-jakarta-sans);
-  color: var(--secondary-color);
-  opacity: 0.8;
+  font-size: 12px; /* Font size */
+  font-weight: 400; /* Normal font weight */
+  line-height: 32px; /* Line height */
+  font-family: var(
+    --plus-jakarta-sans
+  ); /* Set font family using a CSS variable */
+  color: var(
+    --secondary-color
+  ); /* Text color using a CSS variable for secondary color */
+  opacity: 0.8; /* Slightly transparent text */
 }

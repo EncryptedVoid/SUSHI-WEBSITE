@@ -1,83 +1,97 @@
+/* About Us Section */
 .about-us {
-  display: flex;
-  min-height: 720px;
-  overflow: hidden;
+  display: flex; /* Use flexbox for layout */
+  min-height: 720px; /* Minimum height of the section */
+  overflow: hidden; /* Hide any content that overflows the section's box */
 }
 
+/* Styling for the image container in the About Us section */
 .about-us__image {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex: 1; /* Flex grow factor, allows the container to grow and take available space */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack child elements vertically */
+  justify-content: center; /* Vertically center child elements in the container */
 
-  background: var(--color-white);
+  background: var(
+    --color-white
+  ); /* Background color, using a CSS variable for white */
 
-  position: relative;
+  position: relative; /* Set position context for absolute positioning of children */
 }
 
+/* Styling for divs inside the image container */
 .about-us__image div {
-  padding: 32px 64px;
+  padding: 32px 64px; /* Padding around the content */
 
-  flex: 1;
-  display: flex;
-  align-items: center;
+  flex: 1; /* Flex grow factor, allows the div to grow and take available space */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically center child elements in the div */
 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  background-size: contain; /* Scale the background image to be as large as possible while fitting within the container */
 }
 
+/* Specific styling for the sushi3 image in the About Us section */
 .about-us__image-sushi3 {
-  border-bottom: 8px solid var(--color-creamson);
+  border-bottom: 8px solid var(--color-creamson); /* Bottom border with creamson color */
 
-  background-image: url("../../assets/about_bg1.png");
+  background-image: url("../../assets/about_bg1.png"); /* Background image for sushi3 */
 }
 
+/* Specific styling for the sushi2 image in the About Us section */
 .about-us__image-sushi2 {
-  background-image: url("../../assets/about_bg2.png");
+  background-image: url("../../assets/about_bg2.png"); /* Background image for sushi2 */
 }
 
+/* Image styling within the sushi3 container */
 .about-us__image-sushi3 img {
-  width: 225px;
-  height: 200px;
+  width: 225px; /* Fixed width */
+  height: 200px; /* Fixed height */
 }
 
+/* Image styling within the sushi2 container */
 .about-us__image-sushi2 img {
-  width: 240px;
-  height: 160px;
+  width: 240px; /* Fixed width */
+  height: 160px; /* Fixed height */
 }
 
+/* Styling for the button in the About Us section */
 .about-us__button {
-  position: absolute;
-  right: 0;
+  position: absolute; /* Position the button absolutely relative to its nearest positioned ancestor */
+  right: 0; /* Align the button to the right within its container */
 
-  padding: 12px 32px;
-  min-height: 64px;
+  padding: 12px 32px; /* Padding around the text */
+  min-height: 64px; /* Minimum height of the button */
 
-  background: var(--secondary-color);
-  border-radius: 32px 0 0 32px;
-  border: 0;
-  outline: 0;
+  background: var(
+    --secondary-color
+  ); /* Background color, using a CSS variable for the secondary color */
+  border-radius: 32px 0 0 32px; /* Rounded corners on the left side */
+  border: 0; /* No border */
+  outline: 0; /* No outline */
 
-  color: #fff;
-  font-family: var(--plus-jakarta-sans);
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 23px;
+  color: #fff; /* White text color */
+  font-family: var(--plus-jakarta-sans); /* Font family, using a CSS variable */
+  font-weight: 500; /* Font weight (medium) */
+  font-size: 18px; /* Font size */
+  line-height: 23px; /* Line height */
 
-  cursor: pointer;
+  cursor: pointer; /* Change the cursor to indicate the button is clickable */
 }
 
+/* Styling for images within the button */
 .about-us__button img {
-  object-fit: contain;
-  margin-left: 32px;
+  object-fit: contain; /* Ensure the image is scaled to fit within its container */
+  margin-left: 32px; /* Left margin for spacing */
 }
 
+/* Styling for the content container in the About Us section */
 .about-us__content {
-  padding: 64px;
+  padding: 64px; /* Padding around the content */
 
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  flex: 1; /* Flex grow factor, allows the container to grow and take available space */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Horizontally center child elements in the container */
+  flex-direction: column; /* Stack child elements vertically */
 }

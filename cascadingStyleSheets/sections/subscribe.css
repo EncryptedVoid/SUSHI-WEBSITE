@@ -1,0 +1,96 @@
+/* Subscription Section Styling */
+.subscription {
+  padding: 64px; /* Padding around the subscription section */
+
+  background-color: var(
+    --primary-color
+  ); /* Background color using a CSS variable for primary color */
+  background-image: url("../../assets/subscribe_bg.png"); /* Background image for the subscription section */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  background-size: contain; /* Scale the background image to be as large as possible while fitting within the container */
+
+  flex-direction: column; /* Stack child elements vertically (requires display: flex in parent class or container) */
+  overflow: hidden; /* Hide any content that overflows the subscription section's box */
+}
+
+/* Subscription Title Styling */
+.subscription h2 {
+  font-size: 88px; /* Large font size for the title */
+  font-family: var(--playfair-display); /* Font family using a CSS variable */
+  font-weight: 600; /* Semi-bold font weight */
+  line-height: 123px; /* Line height for the title */
+
+  color: #fff; /* White text color */
+  text-align: center; /* Center align the text */
+}
+
+/* Subscription Paragraph Styling */
+.subscription p {
+  font-size: 18px; /* Font size for the paragraph */
+  font-family: var(--plus-jakarta-sans); /* Font family using a CSS variable */
+  font-weight: 300; /* Light font weight */
+  line-height: 36px; /* Line height for the paragraph */
+
+  margin-top: 32px; /* Margin at the top for spacing */
+
+  color: rgba(255, 255, 255, 0.8); /* White text color with some opacity */
+}
+
+/* Subscription Form Styling */
+.subscription__form {
+  min-width: 480px; /* Minimum width of the form */
+  margin-top: 40px; /* Margin at the top for spacing */
+
+  padding: 14px 14px 14px 24px; /* Padding inside the form */
+
+  display: flex; /* Use flexbox for layout */
+  gap: 10px; /* Space between elements in the form */
+
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Border around the form with some transparency */
+  border-radius: 46px; /* Rounded corners for the form */
+}
+
+/* Subscription Form Input Field Styling */
+.subscription__form input {
+  flex: 1; /* Flex grow factor, allows the input field to take up available space */
+
+  font-size: 16px; /* Font size for the input text */
+  font-weight: 400px; /* Normal font weight */
+  font-family: var(--plus-jakarta-sans); /* Font family using a CSS variable */
+
+  color: #fff; /* White text color */
+  opacity: 0.5; /* Semi-transparent text */
+
+  background: transparent; /* Transparent background for the input field */
+  border: none; /* No border for the input field */
+  outline: none; /* No outline on focus for the input field */
+}
+
+/* Styling for Placeholder Text in the Subscription Form Input */
+.subscription__form input::placeholder {
+  color: #fff; /* White color for the placeholder text */
+  opacity: 0.5; /* Semi-transparent placeholder text */
+}
+
+/* Subscription Form Button Styling */
+.subscription__form button {
+  padding: 20px; /* Padding inside the button */
+
+  min-width: 180px; /* Minimum width of the button */
+
+  font-size: 16px; /* Font size for the button text */
+  font-weight: 500; /* Medium font weight for the button text */
+  font-family: var(--plus-jakarta-sans); /* Font family using a CSS variable */
+  color: #fff; /* White color for the button text */
+  text-align: center; /* Center align the button text */
+
+  background: var(
+    --black-400
+  ); /* Background color for the button using a CSS variable */
+  border-radius: 46px; /* Rounded corners for the button */
+  border: none; /* No border for the button */
+  outline: none; /* No outline on focus for the button */
+
+  cursor: pointer; /* Change cursor to indicate the button is clickable */
+}

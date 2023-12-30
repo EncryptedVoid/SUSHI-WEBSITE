@@ -1,0 +1,189 @@
+/* Trending Section Styling */
+.trending {
+  position: relative; /* Set position context for absolute positioning of children */
+
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack child elements vertically */
+  overflow: hidden; /* Hide any content that overflows the trending section's box */
+}
+
+/* Discover Button Styling in Trending Section */
+.trending__discover {
+  position: absolute; /* Position the discover button absolutely within the trending section */
+  top: 44%; /* Vertically position at 44% from the top */
+  left: 44%; /* Horizontally position at 44% from the left */
+  z-index: 1; /* Set stack order to overlay on other elements */
+
+  width: 160px; /* Set width of the button */
+  height: 160px; /* Set height of the button */
+
+  border-radius: 100%; /* Make the button circular */
+  background-color: var(
+    --secondary-color
+  ); /* Background color using a CSS variable for secondary color */
+  cursor: pointer; /* Change cursor to indicate the button is clickable */
+
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Horizontally center content inside the button */
+  align-items: center; /* Vertically center content inside the button */
+}
+
+/* Styling for Paragraph Inside Discover Button */
+.trending__discover p {
+  font-size: 18px; /* Font size */
+  font-weight: 500; /* Medium font weight */
+  font-family: var(--plus-jakarta-sans); /* Font family using a CSS variable */
+
+  text-transform: uppercase; /* Transform text to uppercase */
+  color: #fff; /* White text color */
+}
+
+/* Trending Items (Sushi, Drinks) Styling */
+.trending-sushi,
+.trending-drinks {
+  width: 100%; /* Full width of the parent container */
+  min-height: 640px; /* Minimum height */
+
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Align items in a row */
+}
+
+/* Content Styling Inside Trending Items */
+.trending__content {
+  flex: 1; /* Flex grow factor, allows the content to grow and take available space */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Horizontally center content inside the container */
+  flex-direction: column; /* Stack child elements vertically */
+
+  padding: 32px 64px; /* Padding inside the content area */
+}
+
+/* Trending List Styling */
+.trending__list {
+  list-style: none; /* Remove default list styling */
+
+  flex-wrap: wrap; /* Allow list items to wrap onto multiple lines */
+  gap: 20px; /* Space between list items */
+}
+
+/* Individual List Item Styling in Trending List */
+.trending__list li {
+  flex: 1; /* Flex grow factor, allows the list item to grow and take available space */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically align items in the center */
+  flex-direction: row; /* Align items in a row */
+  gap: 12px; /* Space between elements in the list item */
+
+  min-width: 210px; /* Minimum width of the list item */
+}
+
+/* Trending Icon Styling */
+.trending__icon {
+  width: 24px; /* Set width */
+  height: 24px; /* Set height */
+
+  border-radius: 100%; /* Make the icon circular */
+  background-color: var(
+    --primary-color
+  ); /* Background color using a CSS variable for primary color */
+}
+
+/* Image Styling Inside Trending Icon */
+.trending__icon img {
+  width: 50%; /* Set width relative to the parent element */
+  height: 50%; /* Set height relative to the parent element */
+  object-fit: contain; /* Ensure the image fits within its container without being distorted */
+}
+
+/* Paragraph Styling in Trending List Items */
+.trending__list p {
+  flex: 1; /* Flex grow factor, allows the paragraph to grow and take available space */
+  font-size: 16px; /* Font size */
+  font-weight: 500; /* Medium font weight */
+  font-family: var(--plus-jakarta-sans); /* Font family using a CSS variable */
+
+  color: var(
+    --secondary-color
+  ); /* Text color using a CSS variable for secondary color */
+}
+
+/* Trending Image Container Styling */
+.trending__image {
+  flex: 1; /* Flex grow factor, allows the image container to grow and take available space */
+
+  position: relative; /* Set position context for absolute positioning of children */
+  padding: 32px 64px; /* Padding inside the image container */
+
+  background-color: var(
+    --color-white
+  ); /* Background color using a CSS variable for white */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  background-size: contain; /* Scale the background image to be as large as possible while fitting within the container */
+  background-position: center; /* Center the background image */
+}
+
+/* Specific Background Image for Trending Sushi */
+.trending-sushi .trending__image {
+  background-image: url("../../assets/japanese_sushi.png"); /* Background image for sushi */
+}
+
+/* Specific Background Image for Trending Drink */
+.trending-drink .trending__image {
+  background-image: url("../../assets/japanese_drinks.png"); /* Background image for drinks */
+}
+
+/* Image Styling Inside Trending Image Container */
+.trending__image img {
+  width: 254px; /* Set width */
+  height: 260px; /* Set height */
+  object-fit: contain; /* Ensure the image fits within its container without being distorted */
+}
+
+/* Arrows Styling in Trending Section */
+.trending__arrow {
+  position: absolute; /* Position arrows absolutely within the trending section */
+  z-index: 1; /* Set stack order to overlay on other elements */
+}
+
+/* Image Styling Inside Arrows */
+.trending__arrow img {
+  object-fit: contain; /* Ensure the arrow image fits within its container without being distorted */
+}
+
+/* Left Arrow Positioning */
+.trending__arrow-left {
+  left: -2.5px; /* Position slightly to the left of the left boundary */
+  top: 12%; /* Position 12% from the top */
+}
+
+/* Left and Top Arrow Image Size */
+.trending__arrow-left img,
+.trending__arrow-top img {
+  width: auto; /* Auto width for maintaining aspect ratio */
+  height: 100%; /* Full height of the parent element */
+}
+
+/* Top Arrow Positioning */
+.trending__arrow-top {
+  top: -10.5px; /* Position slightly above the top boundary */
+  left: 12%; /* Position 12% from the left */
+}
+
+/* Bottom Arrow Positioning */
+.trending__arrow-bottom {
+  bottom: -6.5px; /* Position slightly below the bottom boundary */
+  right: 12%; /* Position 12% from the right */
+}
+
+/* Bottom and Right Arrow Image Size */
+.trending__arrow-bottom img,
+.trending__arrow-right img {
+  width: 100%; /* Full width of the parent element */
+  height: auto; /* Auto height for maintaining aspect ratio */
+}
+
+/* Right Arrow Positioning */
+.trending__arrow-right {
+  right: -2.5px; /* Position slightly to the right of the right boundary */
+  bottom: 12%; /* Position 12% from the bottom */
+}

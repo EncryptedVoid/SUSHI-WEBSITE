@@ -1,0 +1,84 @@
+/* Footer Section */
+.footer {
+  width: 100%; /* Set footer width to full viewport width */
+  padding: 20px 40px; /* Padding around the footer content */
+  background: var(
+    --color-white
+  ); /* Background color of the footer, using a CSS variable for white */
+
+  flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
+  gap: 20px; /* Space between flex items */
+
+  overflow: hidden; /* Hide any content that overflows the footer's box */
+}
+
+/* Footer Logo Styling */
+.footer__logo {
+  font-size: 24px; /* Set font size */
+  font-weight: bold; /* Set font weight to bold */
+  font-family: var(
+    --playfair-display
+  ); /* Set font family using a CSS variable */
+  text-transform: uppercase; /* Transform text to uppercase */
+  color: var(
+    --secondary-color
+  ); /* Text color using a CSS variable for secondary color */
+
+  cursor: pointer; /* Change cursor to indicate the logo is clickable */
+}
+
+/* Color styling for spans within the footer logo */
+.footer__logo span {
+  color: var(
+    --primary-color
+  ); /* Set text color using a CSS variable for primary color */
+}
+
+/* Footer List Styling */
+.footer ul {
+  list-style: none; /* Remove default list styling */
+
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
+  flex-direction: row; /* Align items in a row */
+  gap: 64px; /* Space between flex items */
+}
+
+/* Specific styling for the last unordered list in the footer */
+.footer ul:last-child {
+  gap: 32px; /* Reduce the gap between flex items for the last list */
+}
+
+/* Footer Navigation List Item Styling */
+.footer__nav li {
+  font-size: 16px; /* Set font size */
+  font-weight: 500; /* Medium font weight */
+  font-family: var(
+    --plus-jakarta-sans
+  ); /* Set font family using a CSS variable */
+  text-transform: uppercase; /* Transform text to uppercase */
+  color: var(
+    --secondary-color
+  ); /* Text color using a CSS variable for secondary color */
+
+  cursor: pointer; /* Change cursor to indicate the list item is clickable */
+}
+
+/* Footer Social Icons List Item Styling */
+.footer__social li {
+  width: 42px; /* Set width of the list item */
+  height: 42px; /* Set height of the list item */
+
+  background-color: var(
+    --secondary-color
+  ); /* Background color using a CSS variable for secondary color */
+  border-radius: 100%; /* Make the list item circular */
+}
+
+/* Styling for images within the social list items */
+.footer__social li img {
+  width: 45%; /* Set width relative to the parent element */
+  height: 45%; /* Set height relative to the parent element */
+
+  object-fit: contain; /* Ensure the image fits within its container without being distorted */
+}

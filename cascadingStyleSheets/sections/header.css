@@ -1,67 +1,83 @@
+/* Header Navigation Styling */
 .header__nav {
-  display: flex;
-  overflow: hidden;
+  display: flex; /* Use flexbox for layout */
+  overflow: hidden; /* Hide any content that overflows the header's box */
 }
 
+/* Header Logo Styling */
 .header__logo {
-  flex: 1;
-  display: flex;
+  flex: 1; /* Flex grow factor, allows the logo to grow and take available space */
+  display: flex; /* Use flexbox for layout */
 
-  position: relative;
-  padding: 20px;
+  position: relative; /* Set position context for absolute positioning of children */
+  padding: 20px; /* Padding around the logo */
 }
 
+/* Overlay Styling for the Header Logo */
 .header__logo-overlay {
-  position: absolute;
-  inset: 0;
-  width: 100%;
+  position: absolute; /* Position the overlay absolutely relative to its nearest positioned ancestor */
+  inset: 0; /* Shorthand for setting top, right, bottom, and left to 0 */
+  width: 100%; /* Full width of the parent element */
 
-  background-color: var(--primary-color);
-  z-index: -1;
+  background-color: var(
+    --primary-color
+  ); /* Background color using a CSS variable for primary color */
+  z-index: -1; /* Place the overlay behind the logo */
 }
 
+/* Styling for the H4 element in the Header Logo */
 .header__logo h4 {
-  padding-left: 30px;
+  padding-left: 30px; /* Left padding */
 
-  font-weight: 700;
-  font-size: 24px;
-  text-transform: uppercase;
-  font-family: var(--playfair-display);
-  color: #fff;
-  opacity: 0.8;
+  font-weight: 700; /* Bold font weight */
+  font-size: 24px; /* Font size */
+  text-transform: uppercase; /* Transform text to uppercase */
+  font-family: var(
+    --playfair-display
+  ); /* Set font family using a CSS variable */
+  color: #fff; /* White text color */
+  opacity: 0.8; /* Slightly transparent text */
 }
 
+/* Header Menu and Mobile Menu Styling */
 .header__menu,
 .header__menu-mobile {
-  padding: 20px;
-  flex: 1.236;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 64px;
+  padding: 20px; /* Padding around the menu items */
+  flex: 1.236; /* Flex grow factor with a specific value for layout balance */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically center items in the menu */
+  justify-content: flex-end; /* Align menu items to the right end */
+  gap: 64px; /* Space between menu items */
 
-  list-style: none;
+  list-style: none; /* Remove default list styling */
 }
 
+/* List Item Styling within the Header Menu */
 .header__menu li {
-  font-weight: 500;
-  font-family: var(--plus-jakarta-sans);
-  color: var(--secondary-color);
-  font-size: 16px;
-  text-transform: uppercase;
-  line-height: 20px;
-  cursor: pointer;
+  font-weight: 500; /* Medium font weight */
+  font-family: var(
+    --plus-jakarta-sans
+  ); /* Set font family using a CSS variable */
+  color: var(
+    --secondary-color
+  ); /* Text color using a CSS variable for secondary color */
+  font-size: 16px; /* Font size */
+  text-transform: uppercase; /* Transform text to uppercase */
+  line-height: 20px; /* Line height */
+  cursor: pointer; /* Change cursor to indicate the item is clickable */
 }
 
+/* Image Styling within the Header Menu List Items */
 .header__menu li img {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
+  width: 24px; /* Set width */
+  height: 24px; /* Set height */
+  object-fit: contain; /* Ensure the image fits within its container without being distorted */
 }
 
+/* Mobile Menu Specific Styling */
 .header__menu-mobile {
-  display: none;
-  gap: 20px;
+  display: none; /* Hide the mobile menu by default */
+  gap: 20px; /* Reduced space between mobile menu items */
 
-  position: relative;
+  position: relative; /* Set position context for absolute positioning of children */
 }
