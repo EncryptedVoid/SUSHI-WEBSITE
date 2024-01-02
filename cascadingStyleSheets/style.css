@@ -42,7 +42,7 @@
 
 /* Body element styling */
 body {
-  max-width: 1280px; /* Maximum width of the body content */
+  max-width: 100vw; /* Maximum width of the body content */
   margin: 0 auto; /* Center the content */
   background-color: var(--color-creamson); /* Background color */
 }
